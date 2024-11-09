@@ -1,7 +1,7 @@
 // src/components/Login.js
 import React, { useState } from 'react';
 import '../assets/Auth.css';
-
+import { Link } from 'react-router-dom';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -36,6 +36,10 @@ const Login = () => {
         </div>
         <button type="submit" className="auth-button">Login</button>
       </form>
+     
+      <p className="register-link">
+        Don't have an account? <Link to="/register">Register here</Link>
+      </p>
     </div>
   );
 };

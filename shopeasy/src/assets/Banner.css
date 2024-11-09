@@ -1,50 +1,49 @@
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9; /* Adjust background color as needed */
-  }
-  
-  .banner-text {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .banner-text p {
-    font-size: 14px;
-    color: #999;
-  }
-  
-  .banner-text h1 {
-    font-size: 36px;
-    color: #333;
-    margin: 10px 0;
-  }
-  
-  .shop-button {
-    padding: 10px 20px;
-    background-color: #ff5252;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  .banner-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .banner-image img {
-    width: 80%; /* Increase this percentage to make the image larger */
-    max-width: 600px; /* Optional: set a maximum width */
-    height: auto;
-    border-radius: 10px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.banner-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.banner-text p {
+  font-size: 14px;
+  color: #999;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.shop-button {
+  padding: 10px 20px;
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image img {
+  width: 600px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image fills the container proportionally */
+}

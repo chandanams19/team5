@@ -1,7 +1,7 @@
 // src/components/Register.js
 import React, { useState } from 'react';
 import '../assets/Auth.css';
-
+import { Link } from 'react-router-dom';
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -60,6 +60,9 @@ const Register = () => {
         </div>
         <button type="submit" className="auth-button">Register</button>
       </form>
+      <p className="login-link">
+        Already have an account? <Link to="/login">Login here</Link>
+      </p>
     </div>
   );
 };
