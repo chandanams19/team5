@@ -19,9 +19,16 @@ const Navbar = () => {
       <div className="nav-icons">
         <ul className="nav-links">
             <li><Link to="/login">Login</Link> / <Link to="/register">Register</Link></li>
-        </ul>
-        <span className="icon">❤️</span>
-        <span className="icon">🛒</span>
+            <li className="navbar-cart">
+          <Link to="/cart">
+            <i className="fas fa-shopping-cart"></i>
+          </Link>
+          <Link to="/heart">
+          <i class="fa-solid fa-heart"></i>
+          </Link>
+        </li>
+        </ul>     
+       
       </div>
     </nav>
   );
