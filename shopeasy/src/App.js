@@ -10,14 +10,17 @@ import Contact from './components/Contact';
 import Shop from './components/Shop';
 import './App.css';
 
+
 const App = () => {
+ 
   return (
+    
     <Router>
       <div className="App">
         <Navbar />
         <Routes>
           <Route path="/" element={<Banner />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop" element={<Shop/>}  />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />

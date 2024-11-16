@@ -1,9 +1,15 @@
 // Navbar.js
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/Navbar.css';
 
+
 const Navbar = () => {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen); 
+  }
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -18,17 +24,35 @@ const Navbar = () => {
       </ul>
       <div className="nav-icons">
         <ul className="nav-links">
-            <li><Link to="/login">Login</Link> / <Link to="/register">Register</Link></li>
-            <li className="navbar-cart">
-          <Link to="/cart">
-            <i className="fas fa-shopping-cart"></i>
-          </Link>
-          <Link to="/heart">
-          <i class="fa-solid fa-heart"></i>
-          </Link>
+          <li><Link to="/login">Login</Link> / <Link to="/register">Register</Link></li>
+          <li className="navbar-cart">
+            <Link to="/cart">
+              <i className="fas fa-shopping-cart"></i>
+            </Link>
+          </li>
+          <li>
+            <Link to="/heart">
+              <i class="fa-solid fa-heart"></i>
+            </Link>
+          </li>
+          <li className="navbar-search">
+          {isSearchOpen ? (
+            <input
+              type="text"
+              placeholder="Search..."
+              className="search-input"
+              autoFocus
+              onBlur={toggleSearch} // Close the search bar on losing focus
+            />
+          ) : (
+            <i className="fas fa-search search-icon" onClick={toggleSearch}></i>
+          )}
         </li>
-        </ul>     
-       
+
+
+
+        </ul>
+
       </div>
     </nav>
   );

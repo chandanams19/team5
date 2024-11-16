@@ -1,0 +1,28 @@
+
+[
+    {
+      "id": 1,
+      "name": "Floral Summer Dress",
+      "price": "$49.99",
+      "image": "/images/s1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Casual Maxi Dress",
+      "price": "$39.99",
+      "image": "/images/s4.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Elegant Evening Gown",
+      "price": "$89.99",
+      "image": "/images/s6.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Polka Dot Dress",
+      "price": "$59.99",
+      "image": "/images/s7.jpeg"
+    }
+  ]
+  

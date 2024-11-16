@@ -48,7 +48,7 @@ text-decoration: none;
 color: #ff4a57;
 }
 .navbar-cart{
-  .fa-shopping-cart{
+  .fa-shopping-cart, .fa-search{
     padding-right: 10px;
   }
 }
