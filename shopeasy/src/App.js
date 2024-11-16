@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import About from './components/About';
 import Contact from './components/Contact';
+import Payment from './components/Payment';
 import './App.css';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
       </div>
     </Router>

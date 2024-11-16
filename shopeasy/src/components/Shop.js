@@ -1,10 +1,13 @@
 // src/components/Shop.js
 import React, { useEffect, useState } from 'react';
 import '../assets/Shop.css';
-
+import { useNavigate } from 'react-router-dom';
 const Shop = ({ incrementFavoriteCount, incrementCartCount }) => {
+  const navigate = useNavigate();
   const [dresses, setDresses] = useState([]);
-
+  const handleBuyNow = (dress) => {
+    navigate('/payment', { state: { dress } });
+  };
   useEffect(() => {
     fetch('./json/shop.json')
       .then(response => response.json())
@@ -28,7 +31,7 @@ const Shop = ({ incrementFavoriteCount, incrementCartCount }) => {
             </div>
             <div className="btn-alignment">
               <button className="buy-button" onClick={incrementCartCount}>Add to Cart</button>
-              <button className="buy-button">Buy Now</button>
+              <button className="buy-button" onClick={() => handleBuyNow(dress)}>Buy Now</button>
             </div>
           </div>
         ))}
