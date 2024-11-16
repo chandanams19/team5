@@ -10,32 +10,36 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #e63946;
+  color: #333;
+  text-decoration: none;
+  &:hover{
+    color: #e63946;
+  }
 }
 
-.nav-links {
+.nav-links , .nav-icons{
   list-style: none;
   display: flex;
   gap: 2rem;
+  a{
+    text-decoration: none;
+    color: #333;
+    
+  }
+  :hover{
+    color: #e63946;
+  }
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
- 
-}
 
-.nav-icons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
+
+
 
 .icon {
   font-size: 1.2rem;
   cursor: pointer;
 }
-/* Navbar.css */
+
 
 .logo-link {
 font-size: 1.5rem;
@@ -51,4 +55,18 @@ color: #ff4a57;
   .fa-shopping-cart, .fa-search{
     padding-right: 10px;
   }
+}
+.icon-with-count {
+  position: relative;
+}
+
+.cart-count, .favorite-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff5252;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
 }
